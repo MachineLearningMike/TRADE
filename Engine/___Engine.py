@@ -157,16 +157,16 @@ class Engine(threading.Thread):
             Config['timing']['tense'] = Tense.Present if present else Tense.Past
        
 
-# engine = Engine()
-# engine.ChooseMode(
-#     stream=True,
-#     show_stream=True,
-#     demisser=True,
-#     show_demosser=True,
-#     traders=True, 
-#     show_tranders=True,
+engine = Engine()
+engine.ChooseMode(
+    stream=True,
+    show_stream=True,
+    demisser=True,
+    show_demosser=True,
+    traders=True, 
+    show_tranders=True,
 
-#     present=True
-#     )
-# engine.Start(Config['structure'], Config['timing'])
-# Print("Finished running '___Engine.py'")
+    present=True
+    )
+engine.Start(Config['structure'], Config['timing'])
+Print("Finished running '___Engine.py'")
